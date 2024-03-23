@@ -68,8 +68,6 @@ export default defineNuxtConfig({
   modules: [
     "nuxt-server-utils",
     "@sidebase/nuxt-auth",
-    "@nuxt-modules/cache",
-    "nuxt-simple-sitemap",
     "nuxt-icon",
     "@element-plus/nuxt",
     "@nuxt/image-edge",
@@ -113,10 +111,6 @@ export default defineNuxtConfig({
       },
     ],
   ],
-  // site: {
-  //   url: "https://fastsite.pro/",
-  // },
-
   piniaPersistedstate: {
     cookieOptions: {
       sameSite: "strict",
