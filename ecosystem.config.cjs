@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "fastsite",
+      name: "weboko",
       exec_mode: "cluster",
       instances: 1,
       script: "./node_modules/nuxt/bin/nuxt.mjs",
