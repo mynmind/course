@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
       meta: [
         { charset: "utf-8" },
-        { name: "yandex-verification", content: "7ab28f56f903831b" },
+        { name: "yandex-verification", content: "" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           hid: "description",
@@ -44,12 +44,12 @@ export default defineNuxtConfig({
         {
           hid: "og:url",
           property: "og:url",
-          // content: `https://fastsite.pro/`,
+          content: `https://weboko.net`,
         },
         {
           hid: "og:image",
           property: "og:image",
-          // content: `https://fastsite.pro/nuxt-imf.webp`,
+          content: `https://weboko.net/nuxt-imf.webp`,
         },
         {
           hid: "og:locale",
@@ -125,7 +125,7 @@ export default defineNuxtConfig({
   },
   image: {
     aliyun: {
-      baseURL: "http://localhost:3000/",
+      baseURL: "https://cloud.weboko.net/",
     },
   },
   auth: {
