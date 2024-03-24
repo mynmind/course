@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "MyCurse - онлайн обучение",
+      title: "WebOko - Обучающие web курсы",
       htmlAttrs: {
         lang: "ru",
       },
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
         {
           hid: "og:title",
           property: "og:title",
-          content: "MyCurse - онлайн обучение",
+          content: "WebOko - Обучающие web курсы",
         },
         {
           hid: "og:description",

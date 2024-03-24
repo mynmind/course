@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://fastsite.pro/sitemap.xml
+Sitemap: https://weboko.net/sitemap.xml

@@ -8,7 +8,7 @@ useHead({
     {
       hid: "description",
       name: "description",
-      content: "404 - FastSite",
+      content: "404 - WebOko",
     },
     {
       hid: "og:title",
@@ -18,12 +18,12 @@ useHead({
     {
       hid: "og:description",
       property: "og:description",
-      content: "404 - FastSite",
+      content: "404 - WebOko",
     },
     {
       hid: "og:image",
       property: "og:image",
-      content: "https://fastsite.pro/nuxt-imf.webp",
+      content: "https://weboko.net/nuxt-imf.webp",
     },
   ],
 });

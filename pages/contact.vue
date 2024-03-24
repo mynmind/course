@@ -45,29 +45,27 @@ onBeforeUnmount(() => {
   lottieAnimation.value.destroy();
 });
 useHead({
-  title: "FastSite — Ваши контакты с креативом и профессионализмом",
+  title: "WebOko — Наши контакты",
   meta: [
     {
       hid: "description",
       name: "description",
-      content:
-        "Связаться с нами — значит войти в мир креативных возможностей и профессионального подхода. FastSite готов предложить вам свои услуги в области веб-разработки и дизайна. Давайте создадим вместе что-то уникальное!",
+      content: "Связаться с нами.",
     },
     {
       hid: "og:title",
       property: "og:title",
-      content: "FastSite — Ваши контакты с креативом и профессионализмом",
+      content: "WebOko — Наши контакты",
     },
     {
       hid: "og:description",
       property: "og:description",
-      content:
-        "Связаться с нами — значит войти в мир креативных возможностей и профессионального подхода. FastSite готов предложить вам свои услуги в области веб-разработки и дизайна. Давайте создадим вместе что-то уникальное!",
+      content: "Связаться с намию",
     },
     {
       hid: "og:image",
       property: "og:image",
-      content: "https://fastsite.pro/nuxt-imf.webp",
+      content: "https://weboko.net/nuxt-imf.webp",
     },
   ],
 });

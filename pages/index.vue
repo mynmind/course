@@ -46,27 +46,27 @@ onBeforeUnmount(() => {
   lottieAnimation.value.destroy();
 });
 useHead({
-  title: "FastSite - Разботка web - приложений Nuxt3",
+  title: "WebOko - Обучающие web курсы",
   meta: [
     {
       hid: "description",
       name: "description",
-      content: "Создаём быстрые сайты любого типа по выгодным ценам.",
+      content: "Курсы по веб разработке по доступным ценам.",
     },
     {
       hid: "og:title",
       property: "og:title",
-      content: "FastSite - Разботка web - приложений Nuxt3",
+      content: "WebOko - Обучающие web курсы ",
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: "Создаём быстрые сайты любого типа по выгодным ценам.",
+      content: "Курсы по веб разработке по доступным ценам.",
     },
     {
       hid: "og:image",
       property: "og:image",
-      content: `https://fastsite.pro/nuxt-imf.webp`,
+      content: `https://fastsite.net/nuxt-imf.webp`,
     },
   ],
 });
@@ -78,7 +78,7 @@ useHead({
       <div class="container is-max-desktop">
         <div class="content">
           <div class="index-title">
-            <h1 class="title">Курсы по web - разработке</h1>
+            <h1 class="title">Курсы по web</h1>
             <div class="title-h2">
               <span>Доступные материалы для обучения.</span>
             </div>
@@ -104,7 +104,7 @@ useHead({
                   data-aos-once="true"
                 >
                   <div class="index-desctiption-block">
-                    <strong>Разработка корпаративных сайтов, лендингов.</strong>
+                    <strong>Более +10000 видео.</strong>
                     <Icon name="solar:programming-broken" />
                   </div>
                 </div>
@@ -117,7 +117,7 @@ useHead({
                   data-aos-once="true"
                 >
                   <div class="index-desctiption-block">
-                    <strong>Интернет магазины, СЕО оптимизация.</strong>
+                    <strong>Доспутно каждому.</strong>
                     <Icon name="solar:screencast-broken" />
                   </div>
                 </div>
