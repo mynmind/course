@@ -26,7 +26,7 @@ export default defineEventHandler(async (event, response) => {
     }
     const template = await useCompiler("welcome.vue", {
       props: {
-        url: "http://localhost:3000/" + linkhtml,
+        url: "https://weboko.net/" + linkhtml,
         userFirstname: userName,
       },
     });
@@ -44,7 +44,7 @@ export default defineEventHandler(async (event, response) => {
       text: body.username,
       html: template.html,
     };
-    await transporter.sendMail(mail);
+    //await transporter.sendMail(mail);
     await transporter.sendMail(mailClient);
   } catch (event) {
     sendError(
