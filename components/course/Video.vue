@@ -61,7 +61,7 @@ const seastatus = () => {
     activeLesson.value.time = lessons.value[0].time;
   } else {
     if (lessons.value.length > 0) {
-      lessonName.value = lessons.value[0].video[0].name;
+      lessonName.value = lessons.value[0].link_video;
       activeLesson.value.title = lessons.value[0].name;
       activeLesson.value.time = lessons.value[0].time;
       lessons.value[0].active = true;
@@ -70,6 +70,7 @@ const seastatus = () => {
     }
   }
   visible.value = true;
+  console.log(lessonName.value);
 };
 seastatus();
 </script>
@@ -80,11 +81,7 @@ seastatus();
         <div v-if="visible == true" class="video-item-project-first">
           <vue-plyr ref="plyr">
             <video controls crossorigin playsinline data-poster="poster.jpg">
-              <source
-                size="1020"
-                :src="`/video/` + lessonName"
-                type="video/mp4"
-              />
+              <source size="1020" :src="lessonName" type="video/mp4" />
             </video>
           </vue-plyr>
           <div v-if="statusUser == false" class="plyr-pay">
