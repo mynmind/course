@@ -33,7 +33,7 @@ const SlideChange = (swiper) => {
   arrSwiper.value = JSON.parse(arrSwiper.value);
   activeLesson.value.title = arrSwiper.value.name;
   activeLesson.value.time = arrSwiper.value.time;
-  lesson(arrSwiper.value.video[0].name);
+  lesson(arrSwiper.value.link_video);
 };
 const lesson = async (item) => {
   if (statusUser.value === false) {
@@ -49,7 +49,7 @@ const reloadPlyrComponent = async () => {
   visible.value = true;
 };
 const handleMouseEnter = (item) => {
-  lesson(item.video[0].name);
+  lesson(item.link_video);
   lessons.value.forEach((i) => (i.active = false));
   item.active = true;
 };
@@ -79,11 +79,16 @@ seastatus();
     <ClientOnly>
       <div class="video-item-project">
         <div v-if="visible == true" class="video-item-project-first">
-          <vue-plyr ref="plyr">
+          <!-- <vue-plyr ref="plyr">
             <video controls crossorigin playsinline data-poster="poster.jpg">
               <source size="1020" :src="lessonName" type="video/mp4" />
             </video>
-          </vue-plyr>
+            
+          </vue-plyr> -->
+          <video controls>
+            <source :src="lessonName" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div v-if="statusUser == false" class="plyr-pay">
             <nuxt-link class="button is-primary" to="/pricing"
               >К тарифам</nuxt-link
