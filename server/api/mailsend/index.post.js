@@ -17,9 +17,11 @@ export default defineEventHandler(async (event, response) => {
     const body = await readBody(event);
     let linkhtml = "";
     let userName = "";
+    let helloReg = "";
     if (body.getparams) {
       linkhtml = "verificationuser/?cod=" + body.getparams;
       userName = body.username;
+      helloReg = " вы зарегистрировались на портале WebOko ";
     }
     if (body.restore_password) {
       linkhtml = "newpassword/?cod=" + body.restore_password;
@@ -31,22 +33,23 @@ export default defineEventHandler(async (event, response) => {
       },
     });
 
-    const mail = {
-      form: `"${body.username}" <${body.email}>`,
-      to: config.CONTACTMAIL,
-      subject: body.username,
-      html: template.html,
-    };
+    // const mail = {
+    //   from: `"${body.username}" <${body.email}>`,
+    //   to: config.CONTACTMAIL,
+    //   subject: body.username,
+    //   html: template.html,
+    // };
     const mailClient = {
-      form: `"${body.username}" <${config.CONTACTMAIL}>`,
+      from: config.CONTACTMAIL,
       to: body.email,
-      subject: body.username,
+      subject: body.username + helloReg,
       text: body.username,
       html: template.html,
     };
     //await transporter.sendMail(mail);
     await transporter.sendMail(mailClient);
   } catch (event) {
+    console.log(event);
     sendError(
       event,
       createError({

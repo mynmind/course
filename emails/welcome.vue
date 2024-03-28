@@ -58,19 +58,15 @@ const footer = {
 <template>
   <EHtml>
     <EHead />
-    <EPreview> Письмо от платформы Weboko. </EPreview>
+    <EPreview> Письмо от Weboko. </EPreview>
     <EBody :style="main">
       <EContainer :style="container">
-        <EImg
-          src="/nuxt-imf.webp"
-          width="170"
-          height="50"
-          alt="Koala"
-          :style="logo"
-        />
         <EText :style="paragraph"> Здравствуйте {{ userFirstname }}, </EText>
         <EText :style="paragraph">
           Благодарим за регистрацию на портале Weboko
+        </EText>
+        <EText :style="paragraph">
+          Для успешного прохождения обучения необходимо верифицировать аккаунт.
         </EText>
         <ESection :style="btnContainer">
           <EButton px="12" py="12" :style="button" :href="url">
@@ -79,7 +75,6 @@ const footer = {
         </ESection>
         <EText :style="paragraph"> The Weboko team </EText>
         <EHr :style="hr" />
-        <EText :style="footer"> 408 Warren Rd - San Mateo, CA 94402 </EText>
       </EContainer>
     </EBody>
   </EHtml>
